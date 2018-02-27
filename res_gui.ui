@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>630</width>
-    <height>271</height>
+    <height>240</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,76 +23,12 @@
       <height>31</height>
      </rect>
     </property>
-    <item>
-     <property name="text">
-      <string>Black</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Brown</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Red</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Orange</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Yellow</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Green</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Blue</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Violet</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Grey</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>White</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="comboBox5">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>180</y>
-      <width>211</width>
-      <height>31</height>
-     </rect>
+    <property name="toolTip">
+     <string>Enter color of first band</string>
     </property>
-    <item>
-     <property name="text">
-      <string>Gold</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Silver</string>
-     </property>
-    </item>
+    <property name="statusTip">
+     <string>Enter color of first band</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -114,66 +50,6 @@
      <string>First Band</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox2">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>80</y>
-      <width>211</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Black</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Brown</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Red</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Orange</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Yellow</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Green</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Blue</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Violet</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Grey</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>White</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -193,66 +69,6 @@
     <property name="text">
      <string>Second Band</string>
     </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox3">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>130</y>
-      <width>211</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Black</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Brown</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Red</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Orange</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Yellow</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Green</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Blue</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Violet</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Grey</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>White</string>
-     </property>
-    </item>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
@@ -292,27 +108,6 @@
     </property>
     <property name="text">
      <string>Fourth Band</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber1">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>50</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-     </font>
-    </property>
-    <property name="smallDecimalPoint">
-     <bool>false</bool>
-    </property>
-    <property name="numDigits">
-     <number>8</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -373,27 +168,6 @@
      <string>Tolerance(+/-) :</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber2">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>130</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>8</pointsize>
-     </font>
-    </property>
-    <property name="smallDecimalPoint">
-     <bool>false</bool>
-    </property>
-    <property name="numDigits">
-     <number>8</number>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
@@ -416,34 +190,101 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>190</y>
+      <y>180</y>
       <width>201</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Calculate</string>
+    </property>
+    <property name="statusTip">
+     <string>Find Value</string>
     </property>
     <property name="text">
      <string>Calculate !</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>630</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuOptions">
-    <property name="title">
-     <string>Options</string>
+   <widget class="QLineEdit" name="lineEdit1">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>50</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
     </property>
-    <addaction name="actionClear"/>
-    <addaction name="actionExit"/>
+    <property name="toolTip">
+     <string>Resistance Value</string>
+    </property>
+    <property name="statusTip">
+     <string>Resistance Value</string>
+    </property>
    </widget>
-   <addaction name="menuOptions"/>
+   <widget class="QLineEdit" name="lineEdit2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>130</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Tolerance</string>
+    </property>
+    <property name="statusTip">
+     <string>Tolerance</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter color of second band</string>
+    </property>
+    <property name="statusTip">
+     <string>Enter color of second band</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter color of second band</string>
+    </property>
+    <property name="statusTip">
+     <string>Enter color of second band</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>180</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter color of first band</string>
+    </property>
+    <property name="statusTip">
+     <string>Enter color of first band</string>
+    </property>
+   </widget>
   </widget>
   <action name="actionClear">
    <property name="text">
