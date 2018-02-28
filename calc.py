@@ -5,6 +5,7 @@ def signals(self):
     self.lineEdit1.textEdited['QString'].connect(self.calc)                                                                      #signals for connecting all the GUI object to functions
     self.lineEdit1.textEdited['QString'].connect(self.calc)
     self.pushButton.clicked.connect(self.calc)
+    self.pushButton2.clicked.connect(self.clear)
     self.comboBox1.activated[str].connect(self.calc)
     self.comboBox2.activated[str].connect(self.calc)
     self.comboBox2.activated[str].connect(self.calc)
@@ -20,6 +21,11 @@ def signals(self):
 
     for tol in tolCodes:
         self.comboBox4.addItem(tol)
+
+def clear(self):
+    clean = ''
+    self.lineEdit1.setText(clean)                                                                                                 #assigns the value to the lineEdit(may change to LED in future)
+    self.lineEdit2.setText(clean)
 
 def calc(self):
     cb1 = self.comboBox1.currentText()                                                                                           #assigned the current value of each comboBox to a variable
@@ -40,7 +46,7 @@ def calc(self):
 
 Ui_MainWindow.signals = signals                                                                                                 # add all the new functions to Ui_MainWindow
 Ui_MainWindow.calc = calc
-
+Ui_MainWindow.clear = clear
 
 if __name__ == "__main__":
     import sys
