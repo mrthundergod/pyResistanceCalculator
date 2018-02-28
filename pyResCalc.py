@@ -171,6 +171,7 @@ class Ui_MainWindow(object):
         self.actionClear.setText(_translate("MainWindow", "Clear", None))
         self.actionExit.setText(_translate("MainWindow", "Exit", None))
         self.actionExit_2.setText(_translate("MainWindow", "Exit", None))
+        self.actionExit_2.setStatusTip(_translate("MainWindow", "Exit the application", None))
         self.actionExit_2.setShortcut(_translate("MainWindow", "Ctrl+X", None))
 
 import resources_rc

@@ -344,6 +344,9 @@
    <property name="text">
     <string>Exit</string>
    </property>
+   <property name="statusTip">
+    <string>Exit the application</string>
+   </property>
    <property name="shortcut">
     <string>Ctrl+X</string>
    </property>
