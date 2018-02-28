@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(630, 240)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/newPrefix/lightning.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.comboBox1 = QtGui.QComboBox(self.centralwidget)
@@ -96,9 +99,15 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
         self.lineEdit1 = QtGui.QLineEdit(self.centralwidget)
         self.lineEdit1.setGeometry(QtCore.QRect(370, 50, 211, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit1.setFont(font)
         self.lineEdit1.setObjectName(_fromUtf8("lineEdit1"))
         self.lineEdit2 = QtGui.QLineEdit(self.centralwidget)
         self.lineEdit2.setGeometry(QtCore.QRect(370, 130, 211, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit2.setFont(font)
         self.lineEdit2.setObjectName(_fromUtf8("lineEdit2"))
         self.comboBox2 = QtGui.QComboBox(self.centralwidget)
         self.comboBox2.setGeometry(QtCore.QRect(140, 80, 211, 31))
@@ -110,6 +119,9 @@ class Ui_MainWindow(object):
         self.comboBox4.setGeometry(QtCore.QRect(140, 180, 211, 31))
         self.comboBox4.setObjectName(_fromUtf8("comboBox4"))
         MainWindow.setCentralWidget(self.centralwidget)
+        self.statusBar = QtGui.QStatusBar(MainWindow)
+        self.statusBar.setObjectName(_fromUtf8("statusBar"))
+        MainWindow.setStatusBar(self.statusBar)
         self.actionClear = QtGui.QAction(MainWindow)
         self.actionClear.setObjectName(_fromUtf8("actionClear"))
         self.actionExit = QtGui.QAction(MainWindow)
@@ -146,6 +158,7 @@ class Ui_MainWindow(object):
         self.actionClear.setText(_translate("MainWindow", "Clear", None))
         self.actionExit.setText(_translate("MainWindow", "Exit", None))
 
+import resources_rc
 
 if __name__ == "__main__":
     import sys
@@ -155,3 +168,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+

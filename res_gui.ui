@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Resistance Calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/newPrefix/lightning.png</normaloff>:/newPrefix/lightning.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QComboBox" name="comboBox1">
     <property name="geometry">
@@ -214,6 +218,11 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
     <property name="toolTip">
      <string>Resistance Value</string>
     </property>
@@ -229,6 +238,11 @@
       <width>211</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="toolTip">
      <string>Tolerance</string>
@@ -286,6 +300,7 @@
     </property>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionClear">
    <property name="text">
     <string>Clear</string>
@@ -297,6 +312,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
