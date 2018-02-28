@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
-        MainWindow.resize(630, 240)
+        MainWindow.resize(630, 266)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/newPrefix/lightning.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -120,12 +120,23 @@ class Ui_MainWindow(object):
         self.statusBar = QtGui.QStatusBar(MainWindow)
         self.statusBar.setObjectName(_fromUtf8("statusBar"))
         MainWindow.setStatusBar(self.statusBar)
+        self.menuBar = QtGui.QMenuBar(MainWindow)
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 630, 19))
+        self.menuBar.setObjectName(_fromUtf8("menuBar"))
+        self.menuFIle = QtGui.QMenu(self.menuBar)
+        self.menuFIle.setObjectName(_fromUtf8("menuFIle"))
+        MainWindow.setMenuBar(self.menuBar)
         self.actionClear = QtGui.QAction(MainWindow)
         self.actionClear.setObjectName(_fromUtf8("actionClear"))
         self.actionExit = QtGui.QAction(MainWindow)
         self.actionExit.setObjectName(_fromUtf8("actionExit"))
+        self.actionExit_2 = QtGui.QAction(MainWindow)
+        self.actionExit_2.setObjectName(_fromUtf8("actionExit_2"))
+        self.menuFIle.addAction(self.actionExit_2)
+        self.menuBar.addAction(self.menuFIle.menuAction())
 
         self.retranslateUi(MainWindow)
+        QtCore.QObject.connect(self.actionExit_2, QtCore.SIGNAL(_fromUtf8("triggered()")), MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -156,8 +167,11 @@ class Ui_MainWindow(object):
         self.pushButton2.setToolTip(_translate("MainWindow", "Clear", None))
         self.pushButton2.setStatusTip(_translate("MainWindow", "Clear Boxes", None))
         self.pushButton2.setText(_translate("MainWindow", "Clear", None))
+        self.menuFIle.setTitle(_translate("MainWindow", "FIle", None))
         self.actionClear.setText(_translate("MainWindow", "Clear", None))
         self.actionExit.setText(_translate("MainWindow", "Exit", None))
+        self.actionExit_2.setText(_translate("MainWindow", "Exit", None))
+        self.actionExit_2.setShortcut(_translate("MainWindow", "Ctrl+X", None))
 
 import resources_rc
 
