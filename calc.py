@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 from pyResCalc import *                                                                                                         #never tamper with the other file, use import to call everything here!!
 
 
