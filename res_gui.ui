@@ -9,9 +9,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>630</width>
-    <height>266</height>
+    <width>650</width>
+    <height>277</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>277</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>650</width>
+    <height>277</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Resistance Calculator</string>
@@ -24,7 +36,7 @@
    <widget class="QComboBox" name="comboBox1">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>30</y>
       <width>211</width>
       <height>31</height>
@@ -42,15 +54,15 @@
      <rect>
       <x>10</x>
       <y>30</y>
-      <width>111</width>
+      <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>URW Bookman L</family>
+      <family>MS Shell Dlg 2</family>
       <pointsize>14</pointsize>
-      <italic>true</italic>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
@@ -62,15 +74,15 @@
      <rect>
       <x>10</x>
       <y>80</y>
-      <width>121</width>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>URW Bookman L</family>
+      <family>MS Shell Dlg 2</family>
       <pointsize>14</pointsize>
-      <italic>true</italic>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
@@ -82,19 +94,19 @@
      <rect>
       <x>10</x>
       <y>130</y>
-      <width>111</width>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>URW Bookman L</family>
+      <family>MS Shell Dlg 2</family>
       <pointsize>14</pointsize>
-      <italic>true</italic>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
-     <string>Third band</string>
+     <string>Third Band</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -102,15 +114,17 @@
      <rect>
       <x>10</x>
       <y>180</y>
-      <width>121</width>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>URW Bookman L</family>
+      <family>MS Shell Dlg 2</family>
       <pointsize>14</pointsize>
-      <italic>true</italic>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -120,7 +134,7 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>400</x>
       <y>10</y>
       <width>231</width>
       <height>41</height>
@@ -140,7 +154,7 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>610</x>
       <y>50</y>
       <width>81</width>
       <height>51</height>
@@ -158,7 +172,7 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>450</x>
       <y>100</y>
       <width>111</width>
       <height>31</height>
@@ -178,7 +192,7 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>610</x>
       <y>140</y>
       <width>31</width>
       <height>31</height>
@@ -196,7 +210,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>400</x>
       <y>180</y>
       <width>101</width>
       <height>41</height>
@@ -215,7 +229,7 @@
    <widget class="QLineEdit" name="lineEdit1">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>390</x>
       <y>50</y>
       <width>211</width>
       <height>41</height>
@@ -231,7 +245,7 @@
    <widget class="QLineEdit" name="lineEdit2">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>390</x>
       <y>130</y>
       <width>211</width>
       <height>41</height>
@@ -247,7 +261,7 @@
    <widget class="QComboBox" name="comboBox2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>80</y>
       <width>211</width>
       <height>31</height>
@@ -263,7 +277,7 @@
    <widget class="QComboBox" name="comboBox3">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>130</y>
       <width>211</width>
       <height>31</height>
@@ -279,7 +293,7 @@
    <widget class="QComboBox" name="comboBox4">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>180</y>
       <width>211</width>
       <height>31</height>
@@ -295,7 +309,7 @@
    <widget class="QPushButton" name="pushButton2">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>510</x>
       <y>180</y>
       <width>91</width>
       <height>41</height>
@@ -318,8 +332,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>630</width>
-     <height>19</height>
+     <width>650</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFIle">
