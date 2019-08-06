@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from pyResCalc import *                                                                                                         #never tamper with the other file, use import to call everything here!!
+from MainWindow import *                                                                                                         #never tamper with the other file, use import to call everything here!!
 
 
 def signals(self):
@@ -53,8 +53,8 @@ Ui_MainWindow.clear = clear
 
 if __name__ == "__main__":
     import sys
-    app = QtGui.QApplication(sys.argv)
-    MainWindow = QtGui.QMainWindow()
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     ui.signals()                                                                                                                #added this to make sure everything is linked
